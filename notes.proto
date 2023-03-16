@@ -1,16 +1,23 @@
 syntax = "proto3"; // versão do protocol buffer language que nós estamos utilizando
 
 service MMC { // Método aceitando Empty em caso de mensagem vazia e retornando NoteList
-   rpc numeros (stream variaveis) returns (calcMMC) {}
+   rpc Numeros (stream variaveis) returns (calcMMC) {}
 }
 
 message Empty {}
 
 message variaveis { // Model com 3 propriedades (id,title e content). Obs.: Os valores 1,2 e 3 são os indixes de cada propriedade
-   string nome = 1; // ALTERAR
-   float valor = 2;
+   int32 valor1 = 1; // ALTERAR
+   int32 valor2 = 2; // ALTERAR
 }
 message calcMMC { // Mensagem que sera retornada. No nosso exemplo deve retornar um array de note
    // Função calcula MMC
-   float resultado = 1;
+   int32 valor1 = 1;
+   int32 valor2 = 2;
+
+   int32 mmc = 
+
+
+
+
 }
