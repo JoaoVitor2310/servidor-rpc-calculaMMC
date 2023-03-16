@@ -1,16 +1,16 @@
-syntax = "proto3";
+syntax = "proto3"; // versão do protocol buffer language que nós estamos utilizando
 
-service NoteService {
-    rpc List (Empty) returns (NoteList) {}
+service MMC { // Método aceitando Empty em caso de mensagem vazia e retornando NoteList
+   rpc numeros (stream variaveis) returns (calcMMC) {}
 }
 
 message Empty {}
 
-message Note {
-   string id = 1;
-   string title = 2;
-   string content = 3;
+message variaveis { // Model com 3 propriedades (id,title e content). Obs.: Os valores 1,2 e 3 são os indixes de cada propriedade
+   string nome = 1; // ALTERAR
+   float valor = 2;
 }
-message NoteList {
-   repeated Note notes = 1;
+message calcMMC { // Mensagem que sera retornada. No nosso exemplo deve retornar um array de note
+   // Função calcula MMC
+   float resultado = 1;
 }

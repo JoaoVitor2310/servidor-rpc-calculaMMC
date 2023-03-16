@@ -1,7 +1,7 @@
 {
-  "name": "node-grpc",
+  "name": "grpc",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto de demonstração node + gRPC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "grpc": "^1.24.2",
+    "grpc": "^1.24.11",
     "uuid": "^3.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programadriano/node-grpc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/programadriano/node-grpc/issues"
+  },
+  "homepage": "https://github.com/programadriano/node-grpc#readme"
 }
