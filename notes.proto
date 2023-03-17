@@ -14,10 +14,4 @@ message calcMMC { // Mensagem que sera retornada. No nosso exemplo deve retornar
    // Função calcula MMC
    int32 valor1 = 1;
    int32 valor2 = 2;
-
-   int32 mmc = 
-
-
-
-
 }
