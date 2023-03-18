@@ -1,4 +1,6 @@
 syntax = "proto3"; // versão do protocol buffer language que nós estamos utilizando
+
+
 package notes;
 
 
@@ -14,6 +16,5 @@ message argumentos { // Model com 3 propriedades (id,title e content). Obs.: Os 
 }
 message calculaMMC { // Mensagem que sera retornada. No nosso exemplo deve retornar um array de note
    // Função calcula MMC
-   int32 valor1 = 1;
-   int32 valor2 = 2;
+   int32 resultado = 1;
 }
