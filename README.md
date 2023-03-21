@@ -2,6 +2,8 @@
 
 Projeto de demonstração node + gRPC
 
+## Servidor RPC para responder o MMC entre 2 números digitados pelo usuário
+
 ## Instação dos pacotes
 Abra um terminal e execute o comando `npm install` 
 
