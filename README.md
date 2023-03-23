@@ -1,8 +1,6 @@
-# Node gRPC
+# Projeto de servidor RPC, desenvolvido para a aulda de Sistemas Distribuídos, do curso de Engenharia de Computação. 
 
-Projeto de demonstração node + gRPC
-
-## Servidor RPC para responder o MMC entre 2 números digitados pelo usuário
+## Servidor RPC para responder o MMC entre 2 números digitados pelo usuário, utilizando Node e o módulo gRPC
 
 ## Instalação dos pacotes
 Abra um terminal e execute o comando `npm install` 
