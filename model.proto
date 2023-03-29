@@ -1,0 +1,14 @@
+syntax = "proto3"; // Versão do protocol buffer language que nós estamos utilizando
+package model; // Nome do pacote que iremos utilizar
+
+service MMC { // Sérvice MMC
+   rpc calculandoMMC (argumentos) returns (calculaMMC) {}; // Servidor RPC "calculandoMMC" aceitando formato "argumentos" e retorna no formato "calculaMMC"
+}
+
+message argumentos { // Model "argumentos" com 2 valores (primeiro e segundo). Obs.: Os valores 1 e 2 são os índices de cada propriedade.
+   int32 primeiro = 1; // Esses serão os valores que o usuário irá enviar, em formato int32(inteiro)
+   int32 segundo = 2;
+}
+message calculaMMC { // Mensagem que sera retornada, no nosso exemplo deve retornar um valor "resultado" em formato int32(inteiro)
+   int32 resultado = 1; // Índice 1 para o resultado
+}
